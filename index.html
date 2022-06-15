@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyecto en clase</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&display=swap" rel="stylesheet">
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous"></script>
+  	<link rel="stylesheet" type="text/css" href="css/calcu.css">
+</head>
+<body>
+	<div class="calc">
+		<form name="form">
+			<input class="calc-pantalla">
+		</form>
+		<table>
+			<tr>
+				<td><input type="button" value="C" onclick="c()"></td>
+				<td><input type="button" value="AC" onclick="ac()"></td>
+				<td><input type="button" value="del" onclick="del()"></td>
+				<td><input type="button" value="x" onclick="mostrar('*')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="(" onclick="mostrar('(')"></td>
+				<td><input type="button" value=")" onclick="mostrar(')')"></td>
+				<td><input type="button" value="/" onclick="mostrar('/')"></td>
+				<td><input type="button" value="%" onclick="mostrar('%')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="mostrar(7)"></td>
+				<td><input type="button" value="8" onclick="mostrar(8)"></td>
+				<td><input type="button" value="9" onclick="mostrar(9)"></td>
+				<td><input type="button" value="-" onclick="mostrar('-')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="mostrar(4)"></td>
+				<td><input type="button" value="5" onclick="mostrar(5)"></td>
+				<td><input type="button" value="6" onclick="mostrar(6)"></td>
+				<td><input type="button" value="+" onclick="mostrar('+')"></td>
+			</tr>
+			
+			<tr>
+				<td><input type="button" value="1" onclick="mostrar(1)"></td>
+				<td><input type="button" value="2" onclick="mostrar(2)"></td>
+				<td><input type="button" value="3" onclick="mostrar(3)"></td>
+				<td rowspan=2><input type="button" value="=" onclick="igual()"  style="height: 158px; background-color: rgb(68, 0, 255)"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" value="0" onclick="mostrar(0)" style="width: 158px; ;"></td>
+				<td><input type="button" value="." onclick="mostrar('.')"></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="js/calcu.js"></script>
+</body>
+</html>
